@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "==0.104.1"
+uvicorn = "==0.24.0.post1"
+requests = "*"
+aiofiles = "*"
+python-multipart = "*"
+asyncpg = "*"
+pytest = "*"
+pytest-asyncio = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
