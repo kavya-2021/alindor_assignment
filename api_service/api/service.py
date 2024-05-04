@@ -35,6 +35,6 @@ async def get_index():
 
 @app.post("/analyze/")
 async def analyze(cv: UploadFile = File(...), job_description: UploadFile = File(...)):
-    score = random.randint(1, 10)
+    score = random.randint(1, 100)
     explanation = "The score is based on keyword matching and relevance between your CV and the job description."
     return json.dumps({"score": score, "explanation": explanation})
