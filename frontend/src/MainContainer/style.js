@@ -4,12 +4,10 @@ export const Container = styled.div`
     display: flex;
     width : 100%;
     height : 100vh;
-    border : 1px solid red;
 `;
 
 export const LeftSide = styled.div`
     width : 100%;
-    border : 1px solid blue;
     display: flex;
     padding: 3rem;
     flex-direction: column;
@@ -20,7 +18,6 @@ export const LeftSide = styled.div`
 export const RightSide = styled.div`
     width : 100%;
     height : 100%;
-    border : 1px solid green;
 `;
 
 export const SubmitButton = styled.button`

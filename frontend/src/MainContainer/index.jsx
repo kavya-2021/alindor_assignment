@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Container, LeftSide, RightSide, SubmitButton } from './style';
 import FileInput from './FileUploader/upload';
 import Ring from './Ring/ring';
+import FilePreviewer from './FilePreview';
 
 const FilePreview = () => {
   const [fileUrl, setFileUrl] = useState('');
@@ -79,9 +80,12 @@ const FilePreview = () => {
         {
             fileUrl && (
                 <RightSide>
-                    {fileUrl && fileType && (
+                    {/* {fileUrl && fileType && (
                         <embed src={fileUrl} type={fileType} width="100%" height="100%" />
-                    )}
+                    )} */}
+                    {
+                        fileUrl && fileType && <FilePreviewer file={originalFile} />
+                    }
                     {fileUrl && !fileType && <p>Unsupported file format</p>}
                 </RightSide>
             )
