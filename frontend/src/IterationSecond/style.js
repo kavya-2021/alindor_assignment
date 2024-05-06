@@ -74,6 +74,34 @@ export const JDUploadContainer = styled.div`
     max-height : 90%;
     align-self : center;
     overflow-y : scroll;
+
+    textarea{
+        border : none;
+        font-size : 16px;
+        line-height : 24px;
+        padding : 5%;
+        width : 90%;
+        height : 90%;
+        max-height : 90%;
+        overflow-y : scroll;
+    }
+
+    textarea::placeholder {
+        position: absolute;
+        top: 56%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center;
+        font-size : 20px;
+        color: #08c;
+        letter-spacing : 0.1px;
+    }
+
+    textarea:focus{
+        border : none;
+        outline : none;
+    }
 `;
 
 export const ResultContainer = styled.div`
@@ -97,9 +125,15 @@ export const ExplanationContainer = styled.div`
     overflow-y : scroll ; 
     display : flex;
     justify-content : center;
-    align-item : center;
-    text-align : center;
+    align-items : center;
+    text-align: justify;
     font-size :1.25rem ; 
-    border : 1px solid red;
     padding : 1rem;
+`;
+
+export const EditIconDiv = styled.div`
+    position : absolute; 
+    z-index : 1 ; 
+    top : 34.5% ; 
+    right : 23.5%
 `;

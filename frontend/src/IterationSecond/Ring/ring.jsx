@@ -45,7 +45,7 @@ const Circle = ({ size, progress }) => {
         cy={size / 2}
         r={radius}
         strokeWidth={stroke1}
-        stroke="orange"
+        stroke="#08c"
         strokeDasharray={`${circumference} ${circumference}`}
         strokeDashoffset={offset}
         strokeLinecap="round"
@@ -59,7 +59,7 @@ const Circle = ({ size, progress }) => {
         dominantBaseline="middle"
         textAnchor="middle"
         fontSize={size / 5}
-        fill="orange"
+        fill="#08c"
       >
         {progress}%
       </text>
